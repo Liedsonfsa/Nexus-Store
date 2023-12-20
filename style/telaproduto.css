@@ -1,0 +1,56 @@
+/* Adicione estilos específicos da tela do produto aqui */
+
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.specs {
+    font-size: small;
+}
+
+button {
+    background: #fff;
+    border: 1px solid #000; 
+    border-radius: 20px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #000; 
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+button:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.img-aux {
+    height: 10px; /* Ajuste a altura conforme necessário */
+}
+
+.description {
+    margin-top: 10px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.product-details .description-product {
+    max-width: 400px;
+}
+
+.product-details .product-image {
+    flex-grow: 1;
+}
+
+/* Estilos adicionais podem ser aplicados conforme necessário */
