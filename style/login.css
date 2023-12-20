@@ -8,7 +8,6 @@
     border: none;
 }
 
-
 .main{
     position: absolute;
     top: 50%;
@@ -76,29 +75,38 @@ input{
     background-color: rgba(128, 128, 128, 0.359);
 }
 
+p{
+    margin-top: 300px;
+}
+
 a{
+    color: white;
     text-decoration: none;
 }
 
 @media (max-width: 700px){
     .main{
-        width: 500px;
+        width: 400px;
         margin: auto;
     }
-    .right{
+    .left{
         display: none;
     }
 
-    .left{
+    .right{
+        display: flex;
+        flex-direction: column;
         justify-content: center;
-        width: 500px;
+        width: 100vh;
+    }
+
+    .infos{
+        margin-top: 50px;
+    }
+
+    .botao{
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
 
-@media (max-width: 630px){
-    .main{
-        margin: auto;
-        width: 500px;
-    }
-
-}
