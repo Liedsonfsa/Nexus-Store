@@ -82,3 +82,26 @@ footer{
     }
 
 }
+
+@media (max-width: 700px){
+    .main{
+        width: 500px;
+        margin: auto;
+    }
+    .right{
+        display: none;
+    }
+
+    .left{
+        justify-content: center;
+        width: 500px;
+    }
+}
+
+@media (max-width: 630px){
+    .main{
+        margin: auto;
+        width: 500px;
+    }
+
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/cadastro.css">
+    <link rel="shortcut icon" href="img/Luxurious__1_-removebg-preview.png" type="image/x-icon">
     <title>Cadastro</title>
 </head>
 <body>
@@ -20,14 +21,14 @@
                 </div>
                 <div class="div">
                     <form action="#">
-                        <input type="text" placeholder="Endereço" id="endereço">
+                        <input type="text" placeholder="Endereço" id="endereco">
                         <input type="text" placeholder="Telefone" id="telefone">
                     </form>
                 </div>
                 <div class="div">
                     <form action="get">
-                        <input type="text" placeholder="CPF">
-                        <input type="number" placeholder="Idade">
+                        <input type="text" placeholder="CPF" id="cpf">
+                        <input type="number" placeholder="Idade" id="idade">
                     </form>
                 </div>
                 <div class="div4">
@@ -37,13 +38,13 @@
                 </div>
                 <div class="div">
                     <form action="">
-                        <input type="password" placeholder="Senha">
-                        <input type="password" placeholder="Confirmar senha">
+                        <input type="password" placeholder="Senha" id="senha">
+                        <input type="password" placeholder="Confirmar senha" id="confirmar_senha">
                     </form>
                 </div>
             </div>
             <div class="botao">
-                <button>CONFIRMAR</button>
+                <button onclick="click()">CONFIRMAR</button>
             </div>
         </section>
         <section class="right">
@@ -54,5 +55,46 @@
         </section>
     </section>
     
+    <script>
+        var botao = document.getElementsByClassName('botao')
+
+        botao.addEventListener('click', function (event){
+            let nome = document.getElementById('nome')
+            let sobrenome = document.getElementById('sobrenome')
+            let endereco = document.getElementById('endereco')
+            let telefone = document.getElementById('telefone')
+            let cpf = document.getElementById('cpf')
+            let idade = document.getElementById('idade')
+            let email = document.getElementById('email')
+            let senha = document.getElementById('senha')
+            let confirmar_senha = document.getElementById('confirmar_senha')
+
+            if(nome.value != '' && sobrenome.value != ''){
+                alert('foi')
+            } else{
+                alert('not')
+            }
+
+            
+        })
+
+        /*
+        var btnSalvar = document.querySelector('.btnSalvar');
+
+        btnSalvar.addEventListener('click', function (event) {
+            var email = document.querySelector('#email');
+            var senha = document.querySelector('#senha');
+            event.preventDefault();
+
+            if(senha.value !== null && email.value !== null){
+                alert('Enviado com sucesso!!!');
+            } else{
+                alert('Preencha todos os campos.');
+            }
+        })
+
+        */
+
+    </script>
 </body>
 </html>
