@@ -28,8 +28,6 @@ body{
     width: 30px;
 }
 
-
-
 .botao_pesquisar img{
     width: 20px;
     height: 20px;
@@ -68,7 +66,7 @@ iframe{
 footer{
     background: var(--cor1);
     padding: 1rem;
-
+    color: white;
 }
 
 /* Medias */
@@ -87,4 +85,8 @@ a{
     text-decoration: none;
     color: white;
     
+}
+
+.self{
+    text-align: center;
 }
