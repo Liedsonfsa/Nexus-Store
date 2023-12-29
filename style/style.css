@@ -66,24 +66,13 @@ iframe{
 footer{
     background: var(--cor1);
     padding: 1rem;
-    color: white;
-}
-
-/* Medias */
-@media (max-width: 800px){
-    #logo{
-        font-size: 1.2rem;
-    }
-
 }
 
 .self{
     text-align: center;
     display: flex;
-    justify-content: center;
     justify-content: space-around;
     color: black;
-    
 }
 
 a{
@@ -96,3 +85,34 @@ a:hover{
     text-decoration: underline;
     color: blue;
 }
+
+
+/* Medias */
+@media (max-width: 800px){
+    #logo{
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 630px){
+    .self{
+        flex-direction: column-reverse;
+    }
+
+    .self p{
+        padding: 10px;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    .header{
+        padding: 30px;
+    }
+
+
+}
+
+
