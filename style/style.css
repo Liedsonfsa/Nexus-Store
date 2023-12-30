@@ -10,6 +10,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 /* header */
@@ -24,8 +25,37 @@ body{
     z-index: 99;
 }
 
-.menu img{
-    width: 30px;
+.menu{
+    cursor: pointer;
+}
+
+.menu div{
+    width: 32px;
+    height: 5px;
+    background: #fff;
+    margin: 8px;
+    transition: .3s;
+}
+
+.menu:hover .line-1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.menu:hover .line-2{
+    opacity: 0;
+}
+
+.menu:hover .line-3{
+    transform: rotate(45deg) translate(-10px, -10px);
+}
+
+nav{
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    align-items: center;
 }
 
 .botao_pesquisar img{

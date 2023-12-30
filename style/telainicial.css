@@ -89,14 +89,16 @@ h3{
     .section-title{
         font-size: 1.4rem;
     }
+
     .cols-4{
         grid-template-columns: repeat(2,1fr);
     }
 
+
     .product-name, .product-price, .rate{
         max-height: 1rem;
         overflow: hidden;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     
 }
