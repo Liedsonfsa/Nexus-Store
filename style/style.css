@@ -37,7 +37,7 @@ body{
     transition: .3s;
 }
 
-.menu:hover .line-1{
+/* .menu:hover .line-1{
     transform: rotate(-45deg) translate(-8px, 8px);
 }
 
@@ -47,15 +47,30 @@ body{
 
 .menu:hover .line-3{
     transform: rotate(45deg) translate(-10px, -10px);
-}
+} */
 
 nav{
-    display: none;
+    position: fixed;
+    width: 350px;
+    height: 500px;
+    color: white;
+    left: -350px;
+    background: black;
+    
+    
 }
 
-nav ul{
+ul li{
     list-style: none;
     align-items: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 125px;
+}
+
+li:hover{
+    background-color: #ffffff2b;
+    color: cyan;
 }
 
 .botao_pesquisar img{
