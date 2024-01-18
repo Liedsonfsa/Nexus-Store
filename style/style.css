@@ -67,7 +67,7 @@ body{
 nav{
     position: fixed;
     width: 0px;
-    height: 100%;
+    height: 80%;
     color: white;
     left: 0px;
     background: black;
@@ -193,7 +193,20 @@ a:hover{
         padding: 30px;
     }
 
+    .closed{
+        font-size: 10px;
+        left: 0px;
+    }
+
 
 }
 
+@media (max-width: 487px){
+    .closed{
+        left: 0px;
+    }
 
+    .header{
+        flex-direction: column-reverse;
+    }
+}
