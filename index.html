@@ -13,20 +13,10 @@
 
         <div class="header">
             <div class="all-menu">
-                <div class="menu">
-                    <!-- <a href="tela.html" target="_blank"><img src="img/menu-image.png" alt="menu"></a> -->
-                    <div class="line-1"></div>
-                    <div class="line-2"></div>
-                    <div class="line-3"></div>
+                <div class="sidebar">
+                    <a href="#" class="btn-abrir" onclick="mostrar()">&#9776; Abrir</a>
                 </div>
-                <nav class="sidebar">
-                    <ul>
-                        <li>cadastro</li>
-                        <li>login</li>
-                        <li>carrinho</li>
-                        <li>perfil</li>
-                    </ul>
-                </nav>
+                
             </div>
             <div class="botao_pesquisar">
                 <input type="text" id="txtBusca" placeholder="O que você procura?">
@@ -39,6 +29,15 @@
         </div>
        
     </header>
+    <nav id="nav">
+        <a href="#" class="closed" onclick="ocultar()">&times; Fechar</a>
+        <ul>
+            <li>cadastro</li>
+            <li>login</li>
+            <li>carrinho</li>
+            <li>perfil</li>
+        </ul>
+    </nav>
     <main>
 
         <iframe src="telainicial.html" frameborder="0"></iframe>
@@ -56,8 +55,12 @@
     </footer>
 
     <script>
-        function open(){
-            document.getElementsByClassName('sidebar').style.left = '325px';
+        function mostrar(){
+document.getElementById('nav').style.width = '325px';
+        }
+
+        function ocultar(){
+            document.getElementById('nav').style.width = '0px';
         }
     </script>
     

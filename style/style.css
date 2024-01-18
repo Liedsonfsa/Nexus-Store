@@ -22,7 +22,12 @@ body{
     position: sticky;
     top: 0;
     box-shadow: 1px 0px 1px;
-    z-index: 99;
+    z-index: 1;
+}
+
+.header a:hover{
+    text-decoration: none;
+    color: black;
 }
 
 .menu{
@@ -49,16 +54,38 @@ body{
     transform: rotate(45deg) translate(-10px, -10px);
 } */
 
+
+.sidebar{
+    color: white;
+    font-size: 55px;
+}
+
 nav{
     position: fixed;
-    width: 350px;
-    height: 500px;
+    width: 0px;
+    height: 100%;
     color: white;
-    left: -350px;
+    left: 0px;
     background: black;
-    
-    
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5 ease;
 }
+
+nav a{
+    color: white;
+    font-size: 55px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 ul li{
     list-style: none;
