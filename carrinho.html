@@ -10,14 +10,8 @@
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
-            background-color: black;
         }
-
-        main{
-            margin: auto;
-            background-color: azure;
-            padding: 10px;
-        }
+        
     </style>
 </head>
 <body>
@@ -47,7 +41,7 @@
             </thead>
             <tbody>
                 <!-- Aqui você pode usar um loop para exibir os itens do carrinho -->
-                <tr>
+                <!--<tr>
                     <td>Xbox Series X</td>
                     <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
                     <td class="preco-unitario">R$ 4490,00</td>
@@ -67,7 +61,7 @@
                     <td class="preco-unitario">R$ 2100,00</td>
                     <td class="subtotal">R$ 2100,00</td>
                     <td><button onclick="removerItem(this)">Remover</button></td>
-                </tr>
+                </tr>-->
                 <!-- Fim do loop -->
             </tbody>
         </table>
@@ -75,7 +69,7 @@
     
     <!-- Total do Carrinho -->
     <section id="cart-total">
-        <h2>Total: <span id="total">R$ 10.790,00</span></h2>
+        <h2>Total: <span id="total">R$ 0,00</span></h2>
     </section>
     
     <!-- Botões de Ação (por exemplo, Continuar Comprando, Finalizar Compra, Limpar Carrinho, etc.) -->
@@ -91,8 +85,9 @@
 <footer>
     
 </footer>
+<script src="js/carrinho.js"></script>
 
-
+<!--
 <script>
     function atualizarSubtotal(input) {
         const quantidade = input.value;
@@ -162,7 +157,7 @@
 }
 
 </script>
-
+-->
 
 
 </body>
