@@ -8,72 +8,84 @@
         input[type="search"] {
             padding: 5px;
         }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+        }
+
+        main{
+            margin: auto;
+            background-color: azure;
+            padding: 10px;
+        }
     </style>
 </head>
 <body>
 
-<!-- Cabeçalho do Carrinho -->
-<header>
-    <h1>Seu Carrinho de Compras</h1>
-
-    <section id="cart-search">
-        <input type="search" id="searchInput" placeholder="Pesquisar produto...">
-        <button onclick="pesquisar()">Pesquisar</button>
+<main>
+    <!-- Cabeçalho do Carrinho -->
+    <header>
+        <h1>Seu Carrinho de Compras</h1>
+    
+        <section id="cart-search">
+            <input type="search" id="searchInput" placeholder="Pesquisar produto...">
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+    </header>
+    
+    <!-- Lista de Itens no Carrinho -->
+    <section id="cart-items">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Subtotal</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui você pode usar um loop para exibir os itens do carrinho -->
+                <tr>
+                    <td>Xbox Series X</td>
+                    <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
+                    <td class="preco-unitario">R$ 4490,00</td>
+                    <td class="subtotal">R$ 4490,00</td>
+                    <td><button onclick="removerItem(this)">Remover</button></td>
+                </tr>
+                <tr>
+                    <td>Playstation 5</td>
+                    <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
+                    <td class="preco-unitario">R$ 4200,00</td>
+                    <td class="subtotal">R$ 4200,00</td>
+                    <td><button onclick="removerItem(this)">Remover</button></td>
+                </tr>
+                <tr>
+                    <td>Bike Absolute</td>
+                    <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
+                    <td class="preco-unitario">R$ 2100,00</td>
+                    <td class="subtotal">R$ 2100,00</td>
+                    <td><button onclick="removerItem(this)">Remover</button></td>
+                </tr>
+                <!-- Fim do loop -->
+            </tbody>
+        </table>
     </section>
-</header>
-
-<!-- Lista de Itens no Carrinho -->
-<section id="cart-items">
-    <table>
-        <thead>
-            <tr>
-                <th>Produto</th>
-                <th>Quantidade</th>
-                <th>Preço Unitário</th>
-                <th>Subtotal</th>
-                <th>Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Aqui você pode usar um loop para exibir os itens do carrinho -->
-            <tr>
-                <td>Xbox Series X</td>
-                <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
-                <td class="preco-unitario">R$ 4490,00</td>
-                <td class="subtotal">R$ 4490,00</td>
-                <td><button onclick="removerItem(this)">Remover</button></td>
-            </tr>
-            <tr>
-                <td>Playstation 5</td>
-                <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
-                <td class="preco-unitario">R$ 4200,00</td>
-                <td class="subtotal">R$ 4200,00</td>
-                <td><button onclick="removerItem(this)">Remover</button></td>
-            </tr>
-            <tr>
-                <td>Bike Absolute</td>
-                <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
-                <td class="preco-unitario">R$ 2100,00</td>
-                <td class="subtotal">R$ 2100,00</td>
-                <td><button onclick="removerItem(this)">Remover</button></td>
-            </tr>
-            <!-- Fim do loop -->
-        </tbody>
-    </table>
-</section>
-
-<!-- Total do Carrinho -->
-<section id="cart-total">
-    <h2>Total: <span id="total">R$ 10.790,00</span></h2>
-</section>
-
-<!-- Botões de Ação (por exemplo, Continuar Comprando, Finalizar Compra, Limpar Carrinho, etc.) -->
-<section id="cart-actions">
-    <button onclick="voltar()">Voltar</button>
-    <button>Continuar Comprando</button>
-    <button>Finalizar Compra</button>
-    <button onclick="limparCarrinho()">Limpar Carrinho</button>
-</section>
+    
+    <!-- Total do Carrinho -->
+    <section id="cart-total">
+        <h2>Total: <span id="total">R$ 10.790,00</span></h2>
+    </section>
+    
+    <!-- Botões de Ação (por exemplo, Continuar Comprando, Finalizar Compra, Limpar Carrinho, etc.) -->
+    <section id="cart-actions">
+        <button onclick="voltar()">Voltar</button>
+        <button>Continuar Comprando</button>
+        <button>Finalizar Compra</button>
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    </section>
+</main>
 
 <!-- Rodapé do Carrinho -->
 <footer>
@@ -96,7 +108,7 @@
     }
 
     function formatarNumero(numero) {
-        return numero.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits:2 });
+        return numero.toLocaleString('pt-BR', { minimumFractionDigits: 2,maximumFractionDigits:2 });
     }
 
     function calcularTotal() { 
