@@ -122,8 +122,9 @@
     </div>
 
 <script>
+    const carrinho = localStorage.getItem('carrinho') ? JSON.parse(localStorage.getItem('carrinho')) : [];
     function adicionarAoCarrinho(id, nome, preco) {
-        const carrinho = localStorage.getItem('carrinho') ? JSON.parse(localStorage.getItem('carrinho')) : [];
+        
 
         const produto = {
             id: id,
@@ -138,15 +139,17 @@
         if (produtoExistente) {
             // Se o produto já estiver no carrinho, aumenta a quantidade
             produtoExistente.quantidade++;
+            alert('if');
         } else {
             // Caso contrário, adiciona o produto ao carrinho
             carrinho.push(produto);
+            alert('else');
         }
 
         localStorage.setItem('carrinho', JSON.stringify(carrinho));
 
         // Redireciona para a página do carrinho
-        window.location.href = 'carrinho.html';
+        // window.location.href = 'carrinho.html';
     }
 </script>
 
