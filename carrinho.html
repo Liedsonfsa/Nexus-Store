@@ -8,86 +8,79 @@
         input[type="search"] {
             padding: 5px;
         }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
     </style>
 </head>
 <body>
 
-<main>
-    <!-- Cabeçalho do Carrinho -->
-    <header>
-        <h1>Seu Carrinho de Compras</h1>
-    
-        <section id="cart-search">
-            <input type="search" id="searchInput" placeholder="Pesquisar produto...">
-            <button onclick="pesquisar()">Pesquisar</button>
-        </section>
-    </header>
-    
-    <!-- Lista de Itens no Carrinho -->
-    <section id="cart-items">
-        <table>
-            <thead>
-                <tr>
-                    <th>Produto</th>
-                    <th>Quantidade</th>
-                    <th>Preço Unitário</th>
-                    <th>Subtotal</th>
-                    <th>Ações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Aqui você pode usar um loop para exibir os itens do carrinho -->
-                <!--<tr>
-                    <td>Xbox Series X</td>
-                    <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
-                    <td class="preco-unitario">R$ 4490,00</td>
-                    <td class="subtotal">R$ 4490,00</td>
-                    <td><button onclick="removerItem(this)">Remover</button></td>
-                </tr>
-                <tr>
-                    <td>Playstation 5</td>
-                    <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
-                    <td class="preco-unitario">R$ 4200,00</td>
-                    <td class="subtotal">R$ 4200,00</td>
-                    <td><button onclick="removerItem(this)">Remover</button></td>
-                </tr>
-                <tr>
-                    <td>Bike Absolute</td>
-                    <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
-                    <td class="preco-unitario">R$ 2100,00</td>
-                    <td class="subtotal">R$ 2100,00</td>
-                    <td><button onclick="removerItem(this)">Remover</button></td>
-                </tr>-->
-                <!-- Fim do loop -->
-            </tbody>
-        </table>
+<!-- Cabeçalho do Carrinho -->
+<header>
+    <h1>Seu Carrinho de Compras</h1>
+
+    <section id="cart-search">
+        <input type="search" id="searchInput" placeholder="Pesquisar produto...">
+        <button onclick="pesquisar()">Pesquisar</button>
     </section>
-    
-    <!-- Total do Carrinho -->
-    <section id="cart-total">
-        <h2>Total: <span id="total">R$ 0,00</span></h2>
-    </section>
-    
-    <!-- Botões de Ação (por exemplo, Continuar Comprando, Finalizar Compra, Limpar Carrinho, etc.) -->
-    <section id="cart-actions">
-        <button onclick="voltar()">Voltar</button>
-        <button>Continuar Comprando</button>
-        <button>Finalizar Compra</button>
-        <button onclick="limparCarrinho()">Limpar Carrinho</button>
-    </section>
-</main>
+</header>
+
+<!-- Lista de Itens no Carrinho -->
+<section id="cart-items">
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Subtotal</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Aqui você pode usar um loop para exibir os itens do carrinho -->
+            <tr>
+                <td>Xbox Series X</td>
+                <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
+                <td class="preco-unitario">R$ 4490,00</td>
+                <td class="subtotal">R$ 4490,00</td>
+                <td><button onclick="removerItem(this)">Remover</button></td>
+            </tr>
+            <tr>
+                <td>Playstation 5</td>
+                <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
+                <td class="preco-unitario">R$ 4200,00</td>
+                <td class="subtotal">R$ 4200,00</td>
+                <td><button onclick="removerItem(this)">Remover</button></td>
+            </tr>
+            <tr>
+                <td>Bike Absolute</td>
+                <td><input type="number" value="1" min="1" onchange="atualizarSubtotal(this)"></td>
+                <td class="preco-unitario">R$ 2100,00</td>
+                <td class="subtotal">R$ 2100,00</td>
+                <td><button onclick="removerItem(this)">Remover</button></td>
+            </tr>
+            <!-- Fim do loop -->
+        </tbody>
+    </table>
+</section>
+
+<!-- Total do Carrinho -->
+<section id="cart-total">
+    <h2>Total: <span id="total">R$ 10.790,00</span></h2>
+</section>
+
+<!-- Botões de Ação (por exemplo, Continuar Comprando, Finalizar Compra, Limpar Carrinho, etc.) -->
+<section id="cart-actions">
+    <button onclick="voltar()">Voltar</button>
+    <button>Continuar Comprando</button>
+    <button>Finalizar Compra</button>
+    <button onclick="limparCarrinho()">Limpar Carrinho</button>
+</section>
 
 <!-- Rodapé do Carrinho -->
 <footer>
     
 </footer>
-<script src="js/carrinho.js"></script>
 
-<!--
+
 <script>
     function atualizarSubtotal(input) {
         const quantidade = input.value;
@@ -103,20 +96,26 @@
     }
 
     function formatarNumero(numero) {
-        return numero.toLocaleString('pt-BR', { minimumFractionDigits: 2,maximumFractionDigits:2 });
+        return numero.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits:2 });
     }
 
     function calcularTotal() { 
-        let total = 0; 
-        const subtotais = document.getElementsByClassName('subtotal'); 
-        for (let i = 0; i < subtotais.length; i++) { 
-            const subtotalText = subtotais[i].textContent; 
-            const subtotal = extrairNumero(subtotalText); 
-            total += subtotal; 
-        } 
-        
-        document.getElementById('total').textContent = `R$ ${formatarNumero(total)}`; 
-    }
+            let total = 0; 
+            const carrinho = localStorage.getItem('carrinho') ? JSON.parse(localStorage.getItem('carrinho')) : [];
+
+            carrinho.forEach(item => {
+                total += item.preco * item.quantidade;
+            });
+
+            document.getElementById('total').textContent = `R$ ${total.toFixed(2)}`;
+        }
+
+        // Outras funções e scripts relacionados ao carrinho, se houver...
+
+        // Chame a função calcularTotal ao carregar a página para exibir o total inicial
+        window.onload = function () {
+            calcularTotal();
+        };
 
     function removerItem(button) {
         const row = button.parentNode.parentNode;
@@ -157,7 +156,7 @@
 }
 
 </script>
--->
+
 
 
 </body>
