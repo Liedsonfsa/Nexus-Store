@@ -27,8 +27,8 @@
                 </div>
                 <div class="div">
                     <form action="get">
-                        <input type="text" placeholder="CPF">
-                        <input type="number" placeholder="Idade">
+                        <input type="text" placeholder="CPF" id="cpf">
+                        <input type="number" placeholder="Idade" id="idade">
                     </form>
                 </div>
                 <div class="div4">
@@ -38,12 +38,12 @@
                 </div>
                 <div class="div">
                     <form action="">
-                        <input type="password" placeholder="Senha">
-                        <input type="password" placeholder="Confirmar senha">
+                        <input type="password" placeholder="Senha" id="senha">
+                        <input type="password" placeholder="Confirmar senha" id="confirmar-senha">
                     </form>
                 </div>
             </div>
-            <div class="botao">
+            <div class="botao" onclick="cadastrar()">
                 <button>CONFIRMAR</button>
             </div>
         </section>
@@ -54,6 +54,32 @@
             <p>Com a nossa plataforma você vende mais e nos ajuda a crescer no mercado</p>
         </section>
     </section>
+        
+    <script>
+        function cadastrar(){
+            nome = document.getElementById('nome');
+            sobrenome = document.getElementById('sobrenome');
+            endereco = document.getElementById('endereço');
+            telefone = document.getElementById('telefone');
+            cpf = document.getElementById('cpf');
+            idade = document.getElementById('idade');
+            email = document.getElementById('email');
+            senha = document.getElementById('senha');
+            confirmar_senha = document.getElementById('confirmar-senha');
+
+            if(nome.value != '' && sobrenome.value != '' && endereco.value != '' && telefone.value != '' && cpf.value != '' && idade.value != '' && email.value != '' && senha.value != '' && confirmar_senha.value != ''){
+                window.location.href = 'login.html';
+            } else{
+                alert('Preencha todos os campos, por favor.');
+            }
+        }
+
+        function passwordValid(senha, confirmar_senha){
+            return senha == confirmar_senha;
+        }
+
+        
+    </script>
     
 </body>
 </html>
