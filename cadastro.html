@@ -67,8 +67,12 @@
             senha = document.getElementById('senha');
             confirmar_senha = document.getElementById('confirmar-senha');
 
-            if(nome.value != '' && sobrenome.value != '' && endereco.value != '' && telefone.value != '' && cpf.value != '' && idade.value != '' && email.value != '' && senha.value != '' && confirmar_senha.value != ''){
-                window.location.href = 'login.html';
+            if(checkInputs(nome, sobrenome, endereco, telefone, cpf, idade, email, senha, confirmar_senha)){
+                if(passwordValid(senha.value, confirmar_senha.value)){
+                    window.location.href = 'login.html';
+                } else{
+                    alert('Confirme a senha.');
+                }
             } else{
                 alert('Preencha todos os campos, por favor.');
             }
@@ -76,6 +80,14 @@
 
         function passwordValid(senha, confirmar_senha){
             return senha == confirmar_senha;
+        }
+
+        function checkInputs(nome, sobrenome, endereco, telefone, cpf, idade, email, senha, confirmar_senha){
+            if(nome.value != '' && sobrenome.value != '' && endereco.value != '' && telefone.value != '' && cpf.value != '' && idade.value != '' && email.value != '' && senha.value != '' && confirmar_senha.value != ''){
+                return true;
+            }
+
+            return false;
         }
 
         
