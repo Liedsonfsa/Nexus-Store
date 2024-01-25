@@ -60,8 +60,17 @@ body{
 
 
 .sidebar{
-    color: white;
+    color: black;
     font-size: 35px;
+}
+
+.btn-abrir{
+    color: black;
+    text-decoration: none;
+}
+
+.btn-abrir:hover{
+    color: white;
 }
 
 nav{
@@ -144,69 +153,123 @@ iframe{
 
 
 /* footer */
-footer{
-    background: var(--cor1);
-    padding: 1rem;
+#containerFooter{
+    width: 100%;
+    background-color: var(--cor1);
+    color: white;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px 300px;
+    box-sizing: border-box;
 }
 
-.self{
+#containerFooter h3:hover, #containerFooter p:hover{
+    color: lightslategray;
+    cursor: pointer;
+}
+
+#webFooter{
+    padding-top: 30px;
+    font-size: 12px;
+}
+
+#credit {
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
-    color: black;
+    background-color: var(--cor1);
+    color: rgb(29, 29, 29);
+    font-size: 11px;
+    letter-spacing: 1px;
 }
 
-a{
+#credit a{
+    color: white;
     text-decoration: none;
-    color: black;
-    
+    position: relative;
 }
 
-a:hover{
-    text-decoration: underline;
-    color: blue;
+#credit a::after{
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 18px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-
-/* Medias */
-@media (max-width: 800px){
-    #logo{
-        font-size: 1.2rem;
-    }
-
+#credit a:hover::after{
+    height: calc(100% + 8px)
 }
 
-@media (max-width: 630px){
-    .self{
-        flex-direction: column-reverse;
-    }
+#sup{
+    color: white;
+    text-decoration: none;
+}
 
-    .self p{
-        padding: 10px;
-    }
+#sup:hover{
+    color: lightslategray;
+    cursor: pointer;
+}
 
-    #logo{
-        display: none;
-    }
+/* ----------------------------- MEDIA QUERY --------------------------- */
 
-    .header{
-        padding: 30px;
+@media(max-width: 1350px)
+{
+    #containerFooter
+    {
+        padding: 15px 200px;
     }
-
-    .closed{
+}
+@media(max-width: 1166px)
+{
+    #containerFooter
+    {
+        padding: 15px 100px;
+    }
+}
+@media(max-width: 950px)
+{
+    #containerFooter
+    {
+        padding: 15px 50px;
+    }
+}
+@media(max-width: 850px)
+{
+    #containerFooter
+    {
+        font-size: 13px;
+    }
+    #webFooter
+    {
         font-size: 10px;
-        left: 0px;
     }
-
-
 }
-
-@media (max-width: 487px){
-    .closed{
-        left: 0px;
+@media(max-width: 750px)
+{
+    #containerFooter
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px 100px;
     }
-
-    .header{
-        flex-direction: column-reverse;
+    #webFooter
+    {
+        padding: 15px 20px;
+    }
+}
+@media(max-width: 540px)
+{
+    #containerFooter
+    {
+        padding: 0 25px;
     }
 }

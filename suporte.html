@@ -5,8 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/Luxurious__1_-removebg-preview.png" type="image/x-icon">
     <title>Suporte</title>
+    <style>
+        .main{
+            font-family: Arial, Helvetica, sans-serif;
+            width: 700px; 
+            margin-left: auto;
+            margin-right: auto; 
+        }
+
+        #caixa{
+            width: 250px;
+            height: 250px;
+        }
+
+        @media (max-width: 700px){
+            .main{
+                width: 530px;
+            }
+        }
+
+
+        @media (max-width: 530px){
+            .main{
+                width: 100vw;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="main">
+        <P>Essa é a página de suporte da nossa loja.
+         <br> Você pode:
+          <ul>
+            <li>Fazer reclamações sobre algum produto nosso</li>
+            <li></li>
+          </ul>
+
+          Caso sua dúvida não esteja listada acima, entre contato com <a href="mailto:nexusstore@gamil.com">nexusstore@gamil.com</a>
+        </P>
+       <textarea name="caixa" id="caixa" cols="30" rows="10" placeholder="Escreva algo..."></textarea>
+        <br>
+       <button type="button" onclick="send()" id="send">ENVIAR</button>
+    </div>
+
+    <script>
+        function send(){
+            mensagem = document.getElementById('caixa');
+            if(mensagem.value != ''){
+                alert('Sua mensagem foi enviada com sucesso. Nossa equipe de suporte entrará em contato nos dia seguintes.');
+            } else{
+                alert('Digite algo, por favor.');
+            }
+        }
+        
+    </script>
 </body>
 </html>
