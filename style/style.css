@@ -182,7 +182,7 @@ iframe{
     padding: 20px 0;
     text-align: center;
     background-color: var(--cor1);
-    color: rgb(29, 29, 29);
+    color: white;
     font-size: 11px;
     letter-spacing: 1px;
 }
