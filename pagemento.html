@@ -6,21 +6,73 @@
     <title>Tela de Pagamento</title>
     <style>
         .main{
-            background-color: black;
             width: 500px;
-            color: white;
+            color: black;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        img{
+            width: 150px;
+        }
+
+        .cards-1{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .cards-2{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        p{
+            text-align: center;
+        }
+    
+        .others-itens{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul{
+            list-style: none;
         }
     </style>
 </head>
 <body>
     
     <section class="main">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium consequatur mollitia voluptatum quas! Ea cumque modi cupiditate est! Vero corrupti autem quis rem numquam ipsum aut in debitis voluptate est.</p>
+       <img src="img/notebook-gamer-lenovo-gaming-3-intel-core-i5-11300h-geforce-gtx1650-8gb-ram-ssd-512gb-15-6-full-hd-windows-11-preto-82mg0009br-_1662137575_m.jpg" alt="">
+       <p>Name product</p>
+       <p>R$ 4.200 em até 12x de R$350 sem juros</p>
+       <br>
+       <p>Forma de pagamento</p>
+       <p>Cartão de crédito em até 12x</p>
+       <section class="cards">
+        <ul class="cards-1">
+            <li>visa</li>
+            <li>mastercard</li>
+            <li>elo</li>
+        </ul>
+        <ul class="cards-2">
+            <li>hipercard</li>
+            <li>hiper</li>
+            <li>azul</li>
+        </ul>
+       </section>
+       <p>Outras formas</p>
+       <section class="others">
+            <ul class="others-itens">
+                <li>pix</li>
+                <li>boleto</li>
+            </ul>
+       </section>
+
     </section>
 
 </body>

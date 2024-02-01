@@ -10,16 +10,16 @@
     
     <section class="container">
         <section class="slider">
-            <input name='slide' type="radio" checked>
+            <!-- <input name='slide' type="radio" checked>
             <input name='slide' type="radio">
             <input name='slide' type="radio">
-            <input name='slide' type="radio">
+            <input name='slide' type="radio"> -->
 
             <div class="slider-content">
                 <div class="slider-item">
                     <img src="../img/note/principal.jpg" alt="">
                 </div>
-                <div class="slider-item">
+                <!-- <div class="slider-item">
                     <img src="../img/note/duas.jpg" alt="">
                 </div>
                 <div class="slider-item">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="slider-item">
                     <img src="../img/note/up.jpg" alt="">
-                </div>
+                </div> -->
             </div>
         </section>
         
@@ -38,8 +38,9 @@
                 <span><s>3.999,65</s></span>
                 <span id="promo">1.984,90</span>
             </div>
+            <p>ou até 12x</p>
             <div class="adicionar">
-                <button >Comprar Produto</button>
+                <button type="button" onclick="mudar()">Comprar Produto</button>
             </div>
         </section>
         <section class="desc">
@@ -49,6 +50,12 @@
                 O Notebook Gamer Lenovo IdeaPad 3i 82MG0009BR Intel Core i5 11300H 15,6" 8GB SSD 512 GB Windows 11 GeForce GTX 1650 da Lenovo vem com o sistema operacional Windows 11. Com 35.9cm de largura, 25.1cm de profundidade e 2.43cm de altura, o IdeaPad 3i pesa 2.25kg. A tela de 15.6" do IdeaPad 3i tem resolução Full HD. O computador portátil da Lenovo, do modelo IdeaPad 3i usa uma memória RAM de 8.0GB, que é expansível até 16.0GB. Seu processador é um Intel Core i5 11300H de 11ª Geração. O SSD de 512.0GB é o componente responsável pelo armazenamento interno do Lenovo 82MG0009BR. A placa de vídeo GeForce GTX 1650 é a responsável por renderizar gráficos de games e programas de edição, por ser uma placa Dedicada (Off-Board). O notebook Lenovo tem conexão sem fio por Wi-Fi (2.4 GHz e 5.0 GHz), Bluetooth para internet e para acessórios wireless. Além disso, ele tem entradas USB 3.2, USB-C, HDMI 2.0, Ethernet (RJ-45), Áudio.</p>
         </section>
     </section>
+
+    <script>
+        function mudar(){
+            window.location.href = '../pagemento.html';
+        }
+    </script>
 
 </body>
 </html>
