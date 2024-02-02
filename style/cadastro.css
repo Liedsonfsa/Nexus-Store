@@ -105,3 +105,11 @@ button:hover{
     }
 
 }
+
+@media (max-width: 530px){
+    .main{
+        margin: auto;
+        width: 400px;
+    }
+
+}

@@ -66,3 +66,40 @@ h1{
     -webkit-text-fill-color: transparent;
     text-align: center;
 }
+
+
+@media (max-width: 600px){
+    .right{
+        display: none;
+    }
+
+    .main{
+        width: 500px;
+    }
+
+    .left{
+        width: 88%;
+    }
+
+    input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 530px){
+    .right{
+        display: none;
+    }
+
+    .main{
+        width: 400px;
+    }
+
+    .left{
+        width: 88%;
+    }
+
+    input{
+        width: 100%;
+    }
+}
