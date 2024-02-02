@@ -73,6 +73,12 @@ body{
     color: white;
 }
 
+.lista{
+    display: none;
+    list-style: none;
+    background-color: #fff;
+}
+
 nav{
     position: fixed;
     width: 0px;
@@ -105,7 +111,7 @@ nav a:hover{
     font-weight: bolder;
 }
 
-ul li{
+nav ul li{
     list-style: none;
     align-items: center;
     display: flex;
@@ -113,7 +119,7 @@ ul li{
     line-height: 125px;
 }
 
-li:hover{
+nav  ul  li:hover{
     background-color: #ffffff2b;
     color: cyan;
 }

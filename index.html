@@ -19,8 +19,16 @@
                 
             </div>
             <div class="botao_pesquisar">
-                <input type="text" id="txtBusca" placeholder="O que você procura?">
+                <input type="text" id="txtBusca" placeholder="O que você procura?" onkeyup="search()">
                 <img src="search.svg" alt="Buscar" id="btnBuscar">
+                
+                <ul class="lista">
+                    <li class="itens">Notebook</li>
+                    <li class="itens">Monitor</li>
+                    <li class="itens">Playstation</li>
+                    <li class="itens">Jábolo</li>
+                    <li class="itens"></li>
+                </ul>
             </div>
             <div>
                 <img id = "logo" src="img/Luxurious__1_-removebg-preview.png" alt="logo_loja">
@@ -88,6 +96,20 @@
 
         function ocultar(){
             document.getElementById('nav').style.width = '0px';
+        }
+
+        function search(){
+            let input = document.getElementById('txtBusca').value;
+            input = input.toLowerCase();
+            let x = document.getElementsByClassName('lista');
+
+            for(i = 0; i < x.length; i++){
+                if(!x[i].innerHTML.toLowerCase().includes(input)){
+                    x[i].style.display = "none";
+                } else{
+                    x[i].style.display = 'list-item';
+                }
+            }
         }
     </script>
     

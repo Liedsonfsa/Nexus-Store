@@ -1,0 +1,69 @@
+.main{
+    width: 500px;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.215);
+}
+
+img{
+    width: 150px;
+}
+
+.cards-1{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+p{
+    text-align: center;
+}
+
+.others-itens{
+    display: flex;
+    justify-content: space-around;
+}
+
+ul{
+    list-style: none;
+}
+
+ul img{
+    width: 50px;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 800px){
+    .main{
+        width: 530px;
+    }
+}
+
+@media (max-width: 700px){
+    .main{
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px){
+    .main{
+        width: 430px;
+    }
+}

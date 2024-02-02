@@ -84,6 +84,26 @@ h3{
     font-weight: 600;
 }
 
+
+@media (max-width: 1000px){
+    
+    .section-title{
+        font-size: 1.4rem;
+    }
+
+    .cols-4{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    .product-name, .product-price, .rate{
+        max-height: 1rem;
+        overflow: hidden;
+        font-size: 1rem;
+    }
+    
+}
+
 @media (max-width: 800px){
     
     .section-title{

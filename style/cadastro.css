@@ -66,6 +66,7 @@ button{
     gap: 10px;
     background-color: #C7C7C7;
     border: none;
+    cursor: pointer;
 }
 
 .botao{

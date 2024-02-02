@@ -9,6 +9,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     margin-top: 50px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.351);
+    padding: 20px;
 }
 
 #item{
@@ -86,6 +88,29 @@ button{
 @media (max-width: 750px){
     .container{
         width: 600px;
+        
+    }
+
+    img{
+        width: 250px;
+    }
+}
+
+
+@media (max-width: 650px){
+    .container{
+        width: 500px;
+        
+    }
+
+    img{
+        width: 250px;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 430px;
         
     }
 
