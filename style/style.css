@@ -46,22 +46,42 @@ body{
     transition: .3s;
 }
 
-/* .menu:hover .line-1{
+.box{
+    width: fit-content;
+    height: 100vh;
+    background-color: #fff;
+    position: relative;
+    text-align: left;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.menu_icon_box{
+    width: fit-content;
+    height: auto;
+    background-color: #fff;
+    margin: 30px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.line-1, .line-2, .line-3{
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 10px 8px
+}
+
+.active .line-1{
     transform: rotate(-45deg) translate(-8px, 8px);
 }
 
-.menu:hover .line-2{
+.active .line-2{
     opacity: 0;
 }
 
-.menu:hover .line-3{
+.active .line-3{
     transform: rotate(45deg) translate(-10px, -10px);
-} */
-
-
-.sidebar{
-    color: black;
-    font-size: 35px;
 }
 
 .btn-abrir{
@@ -79,7 +99,7 @@ body{
     background-color: #fff;
 }
 
-nav{
+/* nav{
     position: fixed;
     width: 0px;
     height: 80%;
@@ -103,7 +123,7 @@ nav a{
 nav a:hover{
     text-decoration: none;
     color: white;
-}
+} */
 
 .closed{
     font-size: 35px;

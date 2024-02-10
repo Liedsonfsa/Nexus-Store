@@ -12,12 +12,22 @@
     <header>
 
         <div class="header">
-            <div class="all-menu">
-                <div class="sidebar">
-                    <a href="#" class="btn-abrir" onclick="mostrar()">Menu</a>
-                </div>
-                
+            <div class="menu_icon_box">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+                <div class="line-3"></div>
             </div>
+
+            <!-- <div class="box">
+                <nav>
+                    <ul>
+                        <li>Login</li>
+                        <li>Perfil</li>
+                        <li>Carrinho</li>
+                        <li>About us</li>
+                    </ul>
+                </nav>
+            </div> -->
             <div class="botao_pesquisar">
                 <input type="text" id="txtBusca" placeholder="O que você procura?" onkeyup="search()">
                 <img src="search.svg" alt="Buscar" id="btnBuscar">
@@ -37,7 +47,7 @@
         </div>
        
     </header>
-    <nav id="nav">
+    <!-- <nav id="nav">
         <a href="#" class="closed" onclick="ocultar()">Menu</a>
         <ul>
             <a href="cadastro.html"><li>Cadastro</li></a>
@@ -45,7 +55,7 @@
             <a href="carrinho.html"><li>Carrinho</li></a>
             <a href="perfil.html"><li>Perfil</li></a>
         </ul>
-    </nav>
+    </nav> -->
     <main>
 
         <iframe src="telainicial.html" frameborder="0"></iframe>
@@ -90,26 +100,12 @@
     </footer>
 
     <script>
-        function mostrar(){
-            document.getElementById('nav').style.width = '225px';
-        }
+        menu = document.querySelector(".menu_icon_box");
+        box = document.querySelector(".box");
 
-        function ocultar(){
-            document.getElementById('nav').style.width = '0px';
-        }
-
-        function search(){
-            let input = document.getElementById('txtBusca').value;
-            input = input.toLowerCase();
-            let x = document.getElementsByClassName('lista');
-
-            for(i = 0; i < x.length; i++){
-                if(!x[i].innerHTML.toLowerCase().includes(input)){
-                    x[i].style.display = "none";
-                } else{
-                    x[i].style.display = 'list-item';
-                }
-            }
+        menu.onclick = function(){
+            menu.classList.toggle("active");
+            box.classList.toggle("active");
         }
     </script>
     
