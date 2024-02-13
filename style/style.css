@@ -144,11 +144,30 @@ nav .menu-items li {
     font-weight: 500;
 }
 
-.search{
+form{
+    display: flex;
+}
+
+form input{
+    border: none;
+    padding: 5px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+form button{
+    background: white;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px;
+}
+
+.search-div{
     position: absolute;
     right: 50%;
     left: 40%;
     top: 15px;
+    background: white;
+    border-radius: 10px;
 }
 
 

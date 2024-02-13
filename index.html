@@ -20,10 +20,10 @@
                     <span class="line line3"></span>
                   </div>  
 
-                  <div class="search">
+                  <div class="search-div">
                     <form onsubmit="event.preventDefault();" role="search">
                         <input id="search" type="search" placeholder="Search..." autofocus required />
-                        <button type="submit">Go</button>    
+                        <button type="submit" onclick="pesquisar()"><img width="20px" src="icons8-search.svg" alt=""></button>    
                       </form>
                   </div>
                 <div class="logo">
@@ -59,16 +59,16 @@
                 </div>
                 <div id="webFooter">
                     <h3> links de ajuda </h3>
-                    <p> home </p>
+                    <p> <a href="tela.html" id="sup">home</a> </p>
                     <p> <a href="suporte.html"  target="_blanck" id="sup">suporte</a> </p>
                     <p> contato </p>
                 </div>
                 <div id="webFooter">
                     <h3> Devs </h3>
-                    <p> Liedson </p>
-                    <p> Gabriel </p>
-                    <p> Marcos </p>
-                    <p> Pedro </p>
+                    <p> <a href="https://github.com/Liedsonfsa/" target="_blank" id="sup">Liedson</a> </p>
+                    <p> <a href="https://github.com/Bruukii" target="_blank" id="sup">Gabriel</a> </p>
+                    <p> <a href="https://github.com/DockMK" target="_blank" id="sup">Marcos</a> </p>
+                    <p> <a href="https://github.com/Tak3daaa" target="_blank" id="sup">Pedro</a> </p>
                 </div>
                 <div id="webFooter">
                     <h3> Endereço </h3>
@@ -84,12 +84,9 @@
     </footer>
 
     <script>
-        menu = document.querySelector(".menu_icon_box");
-        box = document.querySelector(".box");
-
-        menu.onclick = function(){
-            menu.classList.toggle("active");
-            box.classList.toggle("active");
+        function pesquisar(){
+            termo = document.getElementById('search');
+            window.location.href = termo.value + '.html';
         }
     </script>
     
