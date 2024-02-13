@@ -39,6 +39,7 @@ button{
     background-color: #C7C7C7;
     margin-top: 50px;
     border: none;
+    cursor: pointer;
 }
 
 button:hover{
@@ -50,10 +51,27 @@ p{
     margin-top: 50px;
 }
 
-a{
-    text-decoration: none;
-    color: #000;
+@media (max-width: 700px){
+    .container{
+        width: 600px;
+        background-position: center center;
+    }
 }
+
+@media (max-width: 630px){
+    .container{
+        width: 500px;
+        background-position: center center;
+    }
+}
+
+@media (max-width: 530px){
+    .container{
+        width: 400px;
+        background-position: center center;
+    }
+}
+
 
 /*
 https://bruno.art.br/blog/efeito-vidro-desfoque-de-fundo-com-css/

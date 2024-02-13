@@ -9,6 +9,7 @@
 :root{
     --cor1: rgba(107, 150, 243, 0.615);
 }
+
 /* 
 .header{
     background: var(--cor1);
@@ -178,6 +179,23 @@ display: none;
 
 /* Search */
 
+.search-class{
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: black;
+}
+
+.search-class i{
+    color: aqua;
+
+}
+
+i{
+    background-color: #fff;
+}
+
 iframe{
     margin: auto;
     width: 100%;
@@ -319,3 +337,7 @@ iframe{
         padding: 0 25px;
     }
 }
+
+/*
+https://dev.to/am20dipi/how-to-build-a-simple-search-bar-in-javascript-4onf
+*/
