@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name":" monitor",
+        "price": 1849.99,
+        "image": "img/monitor.jpg"
+    },
+    {
+        "id": 2,
+        "name":" Playstation 5 1TB",
+        "price": 3609.05,
+        "image": "img/playstation.png"
+    },
+    {
+        "id": 3,
+        "name":" Notebook Lenovo ",
+        "price": 3649.05,
+        "image": "img/notebook.jpg"
+    },
+    {
+        "id": 4,
+        "name":" Smart TV 50''",
+        "price": 2524.99,
+        "image": "img/smart-tv.jpg"
+    },
+    {
+        "id": 5,
+        "name":" Pista Hot Wheels Ataque do tubarão",
+        "price": 230.47,
+        "image": "img/hotwheels.jpg"
+    },
+    {
+        "id": 6,
+        "name":" Monitor Gamer",
+        "price": 1849.99,
+        "image": "img/monitor.jpg"
+    },
+    {
+        "id": 7,
+        "name":" LD07 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/7.png"
+    },
+    {
+        "id": 8,
+        "name":" Notebook Lenovo",
+        "price": 3649.05,
+        "image": "img/notebook.jpg"
+    },
+    {
+        "id": 9,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/8.png"
+    },
+    {
+        "id": 10,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/8.png"
+    },
+    {
+        
+        "id": 11,
+        "name":" Pista Hot Wheels Tubarao",
+        "price": 230.47,
+        "image": "img/hotwheels.jpg"
+    },
+    {
+        "id": 12,
+        "name":" LD08 LOUNGE CHAIR",
+        "price": 200,
+        "image": "image/8.png"
+    }
+
+]
