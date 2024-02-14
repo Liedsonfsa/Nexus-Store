@@ -13,19 +13,24 @@
         <nav>
             <div class="navbar">
               <div class="container nav-container">
-                  <input class="checkbox" type="checkbox" name="" id="" />
-                  <div class="hamburger-lines">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
                     <span class="line line1"></span>
                     <span class="line line2"></span>
                     <span class="line line3"></span>
-                  </div>  
+                </div>  
 
-                  <div class="search-div">
-                    <form onsubmit="event.preventDefault();" role="search">
-                        <input id="search" type="search" placeholder="Search..." autofocus required />
-                        <button type="submit" onclick="pesquisar()"><img width="20px" src="icons8-search.svg" alt=""></button>    
-                      </form>
-                  </div>
+                <div class="search-div">
+                <form onsubmit="event.preventDefault();" role="search">
+                    <input id="search" type="search" class="input" placeholder="Search..." autofocus required />
+                    <button type="submit" onclick="pesquisar()"><img width="20px" src="icons8-search.svg" alt=""></button>    
+                    </form>
+                </div>
+                <div class="results-container">
+                    <ul class="result-list" id="list">
+
+                    </ul>
+                </div>
                 <div class="logo">
                     <img src="img/Luxurious__1_-removebg-preview.png" alt="logo" width="50px">
                 </div>
@@ -84,9 +89,73 @@
     </footer>
 
     <script>
+
+        const itens = [
+            {name : 'playstation'},
+            {name : 'monitor'},
+            {name : 'notebook'},
+            {name : 'pista'},
+            {name : 'jabolo'},
+        ]
+
+        whateverElement.addEventListener("event type", () =>{
+            const searchInput = document.querySelector('.input');
+
+
+        });
+
+        searchInput.addEventListener('input', (e) => {
+            let value = e.target.value;
+            if(value && value.trim().length > 0){
+                value = value.trim().toLowerCase();
+
+                setList(itens.filter(item => {
+                    return item.name.includes(value);
+                }));
+            } else{
+                clearList();
+            }
+        });
+
         function pesquisar(){
             termo = document.getElementById('search');
             window.location.href = termo.value + '.html';
+        }
+
+        
+
+        function setList(results){
+            clearList()
+            for(const item of results){
+                const resultItem = document.createElement('li');
+
+                resultItem.classList.add('result-item');
+
+                const text = document.createTextNode(item.name);
+                resultItem.appendChild(text);
+
+                list.appendChild(resultItem);
+            }
+
+            if(results.length == 0){
+                noResults();
+            }
+        }
+
+        function clearList(){
+            while(list.firstChild){
+                list.removeChild(list.firstChild);
+            }
+        }
+
+        function noResults(){
+            const error = document.createElement('li');
+            error.classList.add('error-message');
+            
+            const text = document.createTextNode('Produto não foi encontrado!');
+
+            error.appendChild(text);
+            list.appendChild(error);
         }
     </script>
     
