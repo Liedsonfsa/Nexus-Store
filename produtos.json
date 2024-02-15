@@ -3,74 +3,86 @@
         "id": 1,
         "name":" monitor",
         "price": 1849.99,
-        "image": "img/monitor.jpg"
+        "image": "img/monitor.jpg",
+        "a": "tela-produtos/monitor.html"
     },
     {
         "id": 2,
         "name":" Playstation 5 1TB",
         "price": 3609.05,
-        "image": "img/playstation.png"
+        "image": "img/playstation.png",
+        "a": "tela-produtos/playstation.html"
     },
     {
         "id": 3,
         "name":" Notebook Lenovo ",
         "price": 3649.05,
-        "image": "img/notebook.jpg"
+        "image": "img/notebook.jpg",
+        "a": "tela-produtos/notebook.html"
     },
     {
         "id": 4,
         "name":" Smart TV 50''",
         "price": 2524.99,
-        "image": "img/smart-tv.jpg"
+        "image": "img/smart-tv.jpg",
+        "a": "tela-produtos/tv.html"
     },
     {
         "id": 5,
         "name":" Pista Hot Wheels Ataque do tubarão",
         "price": 230.47,
-        "image": "img/hotwheels.jpg"
+        "image": "img/hotwheels.jpg",
+        "a": "tela-produtos/hot.html"
     },
     {
         "id": 6,
         "name":" Monitor Gamer",
         "price": 1849.99,
-        "image": "img/monitor.jpg"
+        "image": "img/monitor.jpg",
+        "a": "tela-produtos/monitor.html"
     },
     {
         "id": 7,
         "name":" LD07 LOUNGE CHAIR",
         "price": 200,
-        "image": "image/7.png"
+        "image": "image/7.png",
+        "a": "tela-produtos/monitor.html"
     },
     {
         "id": 8,
         "name":" Notebook Lenovo",
         "price": 3649.05,
-        "image": "img/notebook.jpg"
+        "image": "img/notebook.jpg",
+        "a": "tela-produtos/notebook.html"
     },
     {
         "id": 9,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "image/8.png"
+        "image": "image/8.png",
+        "a": "tela-produtos/monitor.html"
     },
     {
         "id": 10,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "image/8.png"
+        "image": "image/8.png",
+        "a": "tela-produtos/monitor.html"
     },
     {
         
         "id": 11,
         "name":" Pista Hot Wheels Tubarao",
         "price": 230.47,
-        "image": "img/hotwheels.jpg"
+        "image": "img/hotwheels.jpg",
+        "a": "tela-produtos/hot.html"
     },
     {
         "id": 12,
         "name":" LD08 LOUNGE CHAIR",
         "price": 200,
-        "image": "image/8.png"
+        "image": "image/8.png",
+        "a": "tela-produtos/monitor.html"
     }
 
 ]

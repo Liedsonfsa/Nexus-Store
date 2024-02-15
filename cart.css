@@ -187,6 +187,7 @@ header{
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.41);
 }
 .listProduct .item h2{
     font-weight: 500;
@@ -241,6 +242,7 @@ body.showCart .container-products{
 }
 .cartTab .close{
     background-color: #eee;
+    /* background-color: rgba(255, 0, 0, 0.89); */
 }
 .listCart .item img{
     width: 100%;
@@ -280,6 +282,7 @@ body.showCart .container-products{
 /* footer */
 
 #containerFooter{
+    margin-top: 20px;
     width: 100%;
     background-color: var(--cor1);
     color: white;

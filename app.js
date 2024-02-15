@@ -26,7 +26,7 @@ closeCart.addEventListener('click', () => {
                 newProduct.dataset.id = product.id;
                 newProduct.classList.add('item');
                 newProduct.innerHTML = 
-                `<img src="${product.image}" alt="">
+                `<a href="${product.a}" target="_blank"><img src="${product.image}" alt=""> </a>
                 <h2>${product.name}</h2>
                 <div class="price">R$${product.price}</div>
                 <button class="addCart">Adicionar ao carrinho</button>`;
@@ -77,10 +77,10 @@ const addCartToHTML = () => {
             listCartHTML.appendChild(newItem);
             newItem.innerHTML = `
             <div class="image">
-                    <img src="${info.image}">
+                <img src="${info.image}">
                 </div>
                 <div class="name">
-                ${info.name}
+                ${info.name+'merda'}
                 </div>
                 
                 <div class="totalPrice">R$${info.price * item.quantity}</div>
