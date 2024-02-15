@@ -6,19 +6,47 @@
     <link rel="shortcut icon" href="img/Luxurious__1_-removebg-preview.png" type="image/x-icon">
     <title>Suporte</title>
     <style>
+        *{
+            margin: 0;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            justify-content: space-between;
+            height: 100vh;
+        }
+
         .main{
             font-family: Arial, Helvetica, sans-serif;
             width: 700px; 
-            position: absolute;
+            /* position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); */
+            margin: auto;
             text-align: justify;
+            background-color: white;
+            /* text-align: center; */
+            box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.799);
+            padding: 20px;
+        }
+
+        img{
+            position: absolute;
+
         }
 
         #caixa{
             width: 250px;
             height: 250px;
+        }
+
+        header, footer{
+            width: 100%;
+            height: 70px;
+            background-color: rgba(107, 150, 243, 0.615);
         }
 
         @media (max-width: 700px){
@@ -36,11 +64,17 @@
     </style>
 </head>
 <body>
+
+    <header>
+        <img src="img/Luxurious__1_-removebg-preview.png" alt="logo">
+    </header>
     <div class="main">
         <P>Essa é a página de suporte da nossa loja.
          <br> Você pode:
           <ul>
             <li>Fazer reclamações sobre algum produto nosso</li>
+            <li>Realizar a devolução de um produto</li>
+            <li>Tirar dúvidas sobre o negócio</li>
           </ul>
 
           Caso sua dúvida não esteja listada acima, entre contato com <a href="mailto:nexusstore@gamil.com">nexusstore@gamil.com</a>
@@ -49,12 +83,17 @@
         <br>
        <button type="button" onclick="send()" id="send">ENVIAR</button>
     </div>
+    <footer>
+
+    </footer>
 
     <script>
         function send(){
             mensagem = document.getElementById('caixa');
             if(mensagem.value != ''){
                 alert('Sua mensagem foi enviada com sucesso. Nossa equipe de suporte entrará em contato nos dia seguintes.');
+                var caixa = document.getElementById('caixa');
+                caixa.textContent.value = '';
             } else{
                 alert('Digite algo, por favor.');
             }

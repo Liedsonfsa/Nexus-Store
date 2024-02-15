@@ -4,85 +4,97 @@
         "name":" Monitor Gamer",
         "price": 1849.99,
         "image": "img/monitor.jpg",
-        "a": "tela-produtos/monitor.html"
+        "a": "tela-produtos/monitor.html",
+        "rate": "&#9733;&#9733;&#9734;&#9734;&#9734;"
     },
     {
         "id": 2,
         "name":" Playstation 5 1TB",
         "price": 3609.05,
         "image": "img/playstation.png",
-        "a": "tela-produtos/playstation.html"
+        "a": "tela-produtos/playstation.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9733;"
     },
     {
         "id": 3,
         "name":" Notebook Lenovo ",
         "price": 3649.05,
         "image": "img/notebook.jpg",
-        "a": "tela-produtos/notebook.html"
+        "a": "tela-produtos/notebook.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
         "id": 4,
         "name":" Smart TV 50''",
         "price": 2524.99,
         "image": "img/smart-tv.jpg",
-        "a": "tela-produtos/tv.html"
+        "a": "tela-produtos/tv.html",
+        "rate": "&#9733;&#9733;&#9733;&#9734;&#9734;"
     },
     {
         "id": 5,
-        "name":" Pista Hot Wheels Ataque do tubarão",
+        "name":" Pista Hot Wheels",
         "price": 230.47,
-        "image": "img/hotwheels.jpg",
-        "a": "tela-produtos/hot.html"
+        "image": "img/pista-hot-wheels.jpg",
+        "a": "tela-produtos/hot.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
         "id": 6,
-        "name":" Monitor Gamer",
-        "price": 1849.99,
-        "image": "img/monitor.jpg",
-        "a": "tela-produtos/monitor.html"
+        "name":" Haedset Gamer Havit",
+        "price": 179.99,
+        "image": "img/headset.jpg",
+        "a": "tela-produtos/headset.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#11242;"
     },
     {
         "id": 7,
-        "name":" Cadeira Gamer",
-        "price": 200,
+        "name":" Cadeira Gamer Pichau",
+        "price": 1303.88,
         "image": "img/cadeira-1.jpeg",
-        "a": "tela-produtos/cadeira.html"
+        "a": "tela-produtos/cadeira.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
         "id": 8,
-        "name":" Notebook Lenovo",
+        "name":" Teclado mecánico 60%",
         "price": 3649.05,
-        "image": "img/notebook.jpg",
-        "a": "tela-produtos/notebook.html"
+        "image": "img/teclado-3.jpg",
+        "a": "tela-produtos/notebook.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
         "id": 9,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png",
-        "a": "tela-produtos/monitor.html"
+        "name":" LEGO Ninjago",
+        "price": 1303.88,
+        "image": "img/pista-hot-wheels.jpg",
+        "a": "tela-produtos/cadeira.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
         "id": 10,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png",
-        "a": "tela-produtos/monitor.html"
+        "name":" Zatura",
+        "price": 3609.05,
+        "image": "img/zatura-4.jpg",
+        "a": "tela-produtos/playstation.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9733;"
     },
     {
         
-        "id": 11,
-        "name":" Pista Hot Wheels Tubarao",
+        "id": 5,
+        "name":" Pista Hot Wheels",
         "price": 230.47,
-        "image": "img/hotwheels.jpg",
-        "a": "tela-produtos/hot.html"
+        "image": "img/pista-hot-wheels.jpg",
+        "a": "tela-produtos/hot.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
-        "id": 12,
-        "name":" LD08 LOUNGE CHAIR",
-        "price": 200,
-        "image": "image/8.png",
-        "a": "tela-produtos/monitor.html"
+        "id": 4,
+        "name":" Smart TV 50''",
+        "price": 2524.99,
+        "image": "img/smart-tv.jpg",
+        "a": "tela-produtos/tv.html",
+        "rate": "&#9733;&#9733;&#9733;&#9734;&#9734;"
     }
 
 ]

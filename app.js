@@ -29,7 +29,8 @@ const addDataToHTML = () => {
             newProduct.innerHTML = 
             `<a href="${product.a}" target="_blank"><img src="${product.image}" alt=""> </a>
             <h2>${product.name}</h2>
-            <div class="price">R$${product.price}</div>
+            <p class="rate">${product.rate}</p>
+            <div class="price">R$${product.price.toLocaleString('pt-BR',  {minimumFractionDigits: 2})}</div>
             <button class="addCart">Adicionar ao carrinho</button>`;
             listProductHTML.appendChild(newProduct);
         });
@@ -85,7 +86,7 @@ const addCartToHTML = () => {
                 <img src="${info.image}">
                 </div>
                 <div class="name">
-                ${info.name+'merda'}
+                ${info.name}
                 </div>
                 
                 <div class="totalPrice">R$${info.price * item.quantity}</div>

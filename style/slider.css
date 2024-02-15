@@ -15,7 +15,6 @@ body{
     --cor1: rgba(107, 150, 243, 0.615);
 }
 
-
 .container{
     width: 700px;
     margin: auto;
@@ -57,8 +56,13 @@ img{
     width: 350px;
 }
 
-tbody > tr:nth-child(odd){
+
+/* tbody > tr:nth-child(odd){
     background-color: lightgray;
+} */
+
+tr{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.134);
 }
 
 td{
@@ -66,33 +70,6 @@ td{
     padding: 10px;
 }
 
-/* 
-.slider > .slider-content{
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    transition: all 500ms ease;
-}
-
-.slider > .slider-content > .slider-item {
-    flex: 0 0 auto;
-    width: 100%;
-}
-
-.slider > input:nth-child(1):checked ~ .slider-content{
-    transform: translateX(0%);
-}
-
-.slider > input:nth-child(2):checked ~ .slider-content{
-    transform: translateX(-100%);
-}
-.slider > input:nth-child(3):checked ~ .slider-content{
-    transform: translateX(-200%);
-}
-
-.slider > input:nth-child(4):checked ~ .slider-content{
-    transform: translateX(-300%);
-} */
 
 p{
     text-align: justify;
@@ -177,10 +154,22 @@ button{
     cursor: pointer;
 }
 
+@media (min-width: 310px){
+    iframe{
+        height: 455px;
+    }
+}
+
+
+@media (min-width: 330px){
+    iframe{
+        height: 455px;
+    }
+}
 
 @media (min-width: 340px){
     iframe{
-        height: 440px;
+        height: 455px;
     }
 
     #containerFooter div{
@@ -191,15 +180,22 @@ button{
 
 @media (min-width: 405px){
     iframe{
-        height: 415px;
+        height: 420px;
     }
 }
 
 @media (min-width: 407px){
     iframe{
-        height: 420px;
+        height: 425px;
     }
 }
+
+@media (min-width: 430px){
+    iframe{
+        height: 410px;
+    }
+}
+
 
 @media (min-width: 450px){
     iframe{
