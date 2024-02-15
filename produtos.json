@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name":" monitor",
+        "name":" Monitor Gamer",
         "price": 1849.99,
         "image": "img/monitor.jpg",
         "a": "tela-produtos/monitor.html"
@@ -43,10 +43,10 @@
     },
     {
         "id": 7,
-        "name":" LD07 LOUNGE CHAIR",
+        "name":" Cadeira Gamer",
         "price": 200,
-        "image": "image/7.png",
-        "a": "tela-produtos/monitor.html"
+        "image": "img/cadeira-1.jpeg",
+        "a": "tela-produtos/cadeira.html"
     },
     {
         "id": 8,

@@ -1,14 +1,25 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+:root{
+    --cor1: rgba(107, 150, 243, 0.615);
+}
+
 
 .container{
     width: 700px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 250px;
+    margin: auto;
+    margin-top: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.351);
     padding: 20px;
 }
@@ -54,6 +65,7 @@ td{
     text-align: center;
     padding: 10px;
 }
+
 /* 
 .slider > .slider-content{
     display: flex;
@@ -94,7 +106,230 @@ button{
 }
 
 
-@media (max-width: 750px){
+#containerFooter{
+    margin-top: 20px;
+    width: 100%;
+    background-color: var(--cor1);
+    color: white;
+    letter-spacing: 1px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px 300px;
+    box-sizing: border-box;
+}
+
+#containerFooter div{
+    margin-left: 50px;
+}
+
+#containerFooter h3:hover, #containerFooter p:hover{
+    color: lightslategray;
+    cursor: pointer;
+}
+
+#webFooter{
+    padding-top: 30px;
+    font-size: 12px;
+}
+
+#credit {
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    text-align: center;
+    background-color: var(--cor1);
+    color: white;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+#credit a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+#credit a::after{
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 18px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -10px;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+#credit a:hover::after{
+    height: calc(100% + 8px)
+}
+
+#sup{
+    color: white;
+    text-decoration: none;
+}
+
+#sup:hover{
+    color: lightslategray;
+    cursor: pointer;
+}
+
+
+@media (min-width: 340px){
+    iframe{
+        height: 440px;
+    }
+
+    #containerFooter div{
+        margin-left: 0px;
+    }
+    
+}
+
+@media (min-width: 405px){
+    iframe{
+        height: 415px;
+    }
+}
+
+@media (min-width: 407px){
+    iframe{
+        height: 420px;
+    }
+}
+
+@media (min-width: 450px){
+    iframe{
+        height: 410px;
+    }
+}
+
+@media (min-width: 520px){
+    iframe{
+        height: 410px;
+    }
+
+}
+
+
+@media (min-width: 540px){
+    iframe{
+        height: 470px;
+    }
+}
+
+
+@media (min-width: 560px){
+    iframe{
+        height: 450px;
+    }
+}
+
+@media (min-width: 585px){
+    iframe{
+        height: 440px;
+    }
+}
+
+
+@media (min-width: 590px){
+    iframe{
+        height: 440px;
+    }
+}
+
+
+@media (min-width: 650px){
+    iframe{
+        height: 440px;
+    }
+}
+
+
+
+@media (min-width: 750px){
+    iframe{
+        height: 270px;
+    }
+}
+
+
+@media (min-width: 850px){
+    iframe{
+        height: 300px;
+    }
+}
+
+
+@media (min-width: 950px){
+    iframe{
+        height: 300px;
+    }
+}
+
+@media (min-width: 1350px){
+    iframe{
+        height: 300px;
+    }
+}
+
+
+
+@media(max-width: 1350px)
+{
+    #containerFooter
+    {
+        padding: 15px 200px;
+    }
+
+}
+@media(max-width: 1166px)
+{
+    #containerFooter
+    {
+        padding: 15px 100px;
+    }
+}
+@media(max-width: 950px)
+{
+    #containerFooter
+    {
+        padding: 15px 50px;
+    }
+}
+@media(max-width: 850px)
+{
+    #containerFooter
+    {
+        font-size: 13px;
+    }
+    #webFooter
+    {
+        font-size: 10px;
+    }
+
+    
+    #containerFooter div{
+        margin-left: 50px;
+    }
+
+}
+@media(max-width: 750px)
+{
+    #containerFooter
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 15px 100px;
+    }
+    #webFooter
+    {
+        padding: 15px 20px;
+    }
+
     .container{
         width: 600px;
         
@@ -104,7 +339,6 @@ button{
         width: 250px;
     }
 }
-
 
 @media (max-width: 650px){
     .container{
@@ -127,3 +361,22 @@ button{
         width: 250px;
     }
 }
+
+@media(max-width: 540px)
+{
+    #containerFooter
+    {
+        padding: 0 25px;
+    }
+
+}
+
+/*
+1357
+1167
+945
+750
+650
+600
+540
+*/

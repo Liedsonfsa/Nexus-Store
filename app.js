@@ -11,36 +11,39 @@ let cart = [];
 iconCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
+
 closeCart.addEventListener('click', () => {
     body.classList.toggle('showCart');
 })
 
-    const addDataToHTML = () => {
-    // remove datas default from HTML
+const addDataToHTML = () => {
+// remove datas default from HTML
 
-        // add new datas
-        if(products.length > 0) // if has data
-        {
-            products.forEach(product => {
-                let newProduct = document.createElement('div');
-                newProduct.dataset.id = product.id;
-                newProduct.classList.add('item');
-                newProduct.innerHTML = 
-                `<a href="${product.a}" target="_blank"><img src="${product.image}" alt=""> </a>
-                <h2>${product.name}</h2>
-                <div class="price">R$${product.price}</div>
-                <button class="addCart">Adicionar ao carrinho</button>`;
-                listProductHTML.appendChild(newProduct);
-            });
-        }
+    // add new datas
+    if(products.length > 0) // if has data
+    {
+        products.forEach(product => {
+            let newProduct = document.createElement('div');
+            newProduct.dataset.id = product.id;
+            newProduct.classList.add('item');
+            newProduct.innerHTML = 
+            `<a href="${product.a}" target="_blank"><img src="${product.image}" alt=""> </a>
+            <h2>${product.name}</h2>
+            <div class="price">R$${product.price}</div>
+            <button class="addCart">Adicionar ao carrinho</button>`;
+            listProductHTML.appendChild(newProduct);
+        });
     }
-    listProductHTML.addEventListener('click', (event) => {
-        let positionClick = event.target;
-        if(positionClick.classList.contains('addCart')){
-            let id_product = positionClick.parentElement.dataset.id;
-            addToCart(id_product);
-        }
-    })
+}
+
+listProductHTML.addEventListener('click', (event) => {
+    let positionClick = event.target;
+    if(positionClick.classList.contains('addCart')){
+        let id_product = positionClick.parentElement.dataset.id;
+        addToCart(id_product);
+    }
+})
+
 const addToCart = (product_id) => {
     let positionThisProductInCart = cart.findIndex((value) => value.product_id == product_id);
     if(cart.length <= 0){
@@ -59,9 +62,11 @@ const addToCart = (product_id) => {
     addCartToHTML();
     addCartToMemory();
 }
+
 const addCartToMemory = () => {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
+
 const addCartToHTML = () => {
     listCartHTML.innerHTML = '';
     let totalQuantity = 0;
@@ -106,6 +111,7 @@ listCartHTML.addEventListener('click', (event) => {
         changeQuantityCart(product_id, type);
     }
 })
+
 const changeQuantityCart = (product_id, type) => {
     let positionItemInCart = cart.findIndex((value) => value.product_id == product_id);
     if(positionItemInCart >= 0){
@@ -144,4 +150,5 @@ const initApp = () => {
         }
     })
 }
+
 initApp();
