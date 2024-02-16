@@ -25,11 +25,11 @@
     },
     {
         "id": 4,
-        "name":" Smart TV 50''",
-        "price": 2524.99,
-        "image": "img/smart-tv.jpg",
-        "a": "tela-produtos/tv.html",
-        "rate": "&#9733;&#9733;&#9733;&#9734;&#9734;"
+        "name":" GAN 13 M Maglev",
+        "price": 599.90,
+        "image": "img/cubo.jpg",
+        "a": "tela-produtos/cubo.html",
+        "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
         "id": 5,
@@ -58,43 +58,44 @@
     {
         "id": 8,
         "name":" Teclado mecánico 60%",
-        "price": 3649.05,
+        "price": 399.99,
         "image": "img/teclado-3.jpg",
-        "a": "tela-produtos/notebook.html",
+        "a": "tela-produtos/teclado.html",
         "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
         "id": 9,
         "name":" LEGO Ninjago",
         "price": 1303.88,
-        "image": "img/pista-hot-wheels.jpg",
-        "a": "tela-produtos/cadeira.html",
+        "image": "img/LEGO-Ninjago.jpg",
+        "a": "tela-produtos/lego.html",
         "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
         "id": 10,
-        "name":" Zatura",
-        "price": 3609.05,
-        "image": "img/zatura-4.jpg",
-        "a": "tela-produtos/playstation.html",
+        "name":" Bebê Yoda Action figure Mandalorian",
+        "price": 143.90,
+        "image": "img/babyyoda.jpg",
+        "a": "tela-produtos/baby-yoda.html",
         "rate": "&#9733;&#9733;&#9733;&#9733;&#9733;"
     },
     {
         
-        "id": 5,
-        "name":" Pista Hot Wheels",
-        "price": 230.47,
-        "image": "img/pista-hot-wheels.jpg",
-        "a": "tela-produtos/hot.html",
+        "id": 11,
+        "name":" Galaxy Watch",
+        "price": 1342.90,
+        "image": "img/smart-watch.jpg",
+        "a": "tela-produtos/smart-watch.html",
         "rate": "&#9733;&#9733;&#9733;&#9733;&#9734;"
     },
     {
-        "id": 4,
-        "name":" Smart TV 50''",
-        "price": 2524.99,
-        "image": "img/smart-tv.jpg",
-        "a": "tela-produtos/tv.html",
+        "id": 12,
+        "name":" Sony PlayStation 4 Dual Shock",
+        "price": 379.90,
+        "image": "img/controle.jpg",
+        "a": "tela-produtos/controle.html",
         "rate": "&#9733;&#9733;&#9733;&#9734;&#9734;"
     }
 
 ]
+
