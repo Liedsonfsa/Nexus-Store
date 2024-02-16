@@ -38,6 +38,8 @@
     width: 60%;
 }
 
+
+
 .infos{
     display: flex;
     flex-direction: column;
@@ -76,6 +78,74 @@ input{
     background-color: rgba(128, 128, 128, 0.359);
 }
 
+.right-a a{
+    color: transparent;
+}
+
+.right-a p{
+    display: none;
+}
+
+.right-a a:hover{
+    text-decoration: underline;
+}
+
 a{
     text-decoration: none;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
 }
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+@media (max-width: 700px){
+    .left{
+        display: none;
+    }
+
+    .right{
+        width: 100%;
+    }
+
+    .main{
+        width: 630px;
+    }
+
+    .button{
+        margin-bottom: 20px;
+    }
+
+    .right-a a{
+        color: black
+    }
+
+}
+
+@media (max-width: 630px){
+    .main{
+        width: 530px;
+    }
+
+    .button{
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+@media (max-width: 530px){
+    .main{
+        width: 100%;
+    }
+
+    .button{
+        margin-bottom: 20px;
+    }
+}
+

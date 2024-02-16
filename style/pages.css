@@ -68,13 +68,13 @@ h1{
 }
 
 
-@media (max-width: 600px){
+@media (max-width: 730px){
     .right{
         display: none;
     }
 
     .main{
-        width: 500px;
+        width: 630px;
     }
 
     .left{
@@ -86,20 +86,16 @@ h1{
     }
 }
 
-@media (max-width: 530px){
-    .right{
-        display: none;
+@media (max-width: 630px){
+    .main{
+        width: 490px;
     }
 
+}
+
+@media (max-width: 510px){
     .main{
         width: 400px;
     }
 
-    .left{
-        width: 88%;
-    }
-
-    input{
-        width: 100%;
-    }
 }

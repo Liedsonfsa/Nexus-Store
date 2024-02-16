@@ -51,6 +51,13 @@ p{
     margin-top: 50px;
 }
 
+img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+}
+
 @media (max-width: 700px){
     .container{
         width: 600px;
@@ -63,12 +70,20 @@ p{
         width: 500px;
         background-position: center center;
     }
+
+    .logo{
+        width: 120px;
+    }
 }
 
 @media (max-width: 530px){
     .container{
         width: 400px;
         background-position: center center;
+    }
+
+    .logo{
+        width: 120px;
     }
 }
 

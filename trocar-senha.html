@@ -12,7 +12,7 @@
     <main class="main">
         <div class="left">
             <div class="cabecalho">
-                <h1>Troca de Senha</h1>
+                <h1>Trocar de Senha</h1>
                 <p><a href="login.html"></a></p>
             </div>
             <div class="infos">
@@ -22,7 +22,7 @@
                     </form>
                 </div>
                 <div class="botao">
-                    <button class="button">
+                    <button class="button" onclick="mudar()">
                         CONFIRMAR
                     </button>
                 </div>
@@ -32,6 +32,17 @@
             
         </div>
     </main>
+
+    <script>
+        function mudar(){
+            email = document.getElementById('email').value;
+            if(email != ''){
+                window.location.href = 'index.html';
+            } else{
+                alert('Informe o seu email.');
+            }
+        }
+    </script>
 
 </body>
 </html>

@@ -56,6 +56,11 @@ img{
     width: 350px;
 }
 
+.informações{
+    text-align: center;
+    align-items: center;
+}
+
 
 /* tbody > tr:nth-child(odd){
     background-color: lightgray;
@@ -367,12 +372,3 @@ button{
 
 }
 
-/*
-1357
-1167
-945
-750
-650
-600
-540
-*/
