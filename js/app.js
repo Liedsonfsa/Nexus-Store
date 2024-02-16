@@ -136,14 +136,15 @@ const changeQuantityCart = (product_id, type) => {
 }
 
 function finalizarCompra(){
+    totalQuantity = 0
     if(cart.length > 0){
-        window.location.href = '../finalizar.html';
         cart.forEach(item => {
-            currency += (item.quantity * item.price)
+            totalQuantity += (parseFloat(item.price) *  parseInt(item.quantity));
+            
         })
-    }
 
-    alert(currency)
+        // alert(parseFloat(totalQuantity))
+    }
 }
 
 const initApp = () => {
