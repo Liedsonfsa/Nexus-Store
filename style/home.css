@@ -21,20 +21,40 @@ header{
     width: 100vw;
     background-color: var(--cor1);
     margin-bottom: 20px;
-    /* position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 100%; */
+    
+    /* z-index: 1;
+    opacity: 100%;  */
 }
+
+
+form{
+    display: flex;
+}
+
+form input{
+    border: none;
+    padding: 5px;
+    border-radius: 10px 0px 0px 10px;
+    width: 300px;
+}
+
+form button{
+    background: white;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    padding: 5px;
+}
+
+.search-div{
+    margin-right: 120px;
+    background: white;
+    border-radius: 20px;
+}
+
 
 
 p{
     height: 20px;
-}
-nav {
-    width: 100%;
-    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
 
 .nav-container {
@@ -234,8 +254,9 @@ svg{
 /* cart */
 .cartTab{
     width: 400px;
-    background-color: #353432;
-    color: #eee;
+    background-color: rgba(107, 150, 243, 0.997);
+    /* color: #eee; */
+    color: black;
     position: fixed;
     top: 0;
     right: -400px;
@@ -294,7 +315,8 @@ body.showCart .container-products{
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-color: #eee;
+    /* background-color: #eee; */
+    background-color: rgba(128, 128, 128, 0.234);
     border-radius: 50%;
     color: #555;
     cursor: pointer;
@@ -458,6 +480,11 @@ body.showCart .container-products{
         padding-left: 50px;
         transition: transform 0.5s ease-in-out;
         text-align: center;
+    }
+
+    .search-div{
+        width: 250px;
+        margin-right: 80px;
     }
 }
 @media(max-width: 750px)

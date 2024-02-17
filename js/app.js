@@ -136,14 +136,23 @@ const changeQuantityCart = (product_id, type) => {
 }
 
 function finalizarCompra(){
-    totalQuantity = 0
-    if(cart.length > 0){
-        cart.forEach(item => {
-            totalQuantity += (parseFloat(item.price) *  parseInt(item.quantity));
-            
-        })
+   window.location.href = '../finalizar.html';
+}
 
-        // alert(parseFloat(totalQuantity))
+function searchItem(){
+    let item = document.getElementById('search').value;
+
+    if(products.length > 0) 
+    {
+        let find = 0;
+        products.forEach(product => {
+            let name = product.name
+            
+            if(name.search(item)){
+                // alert('achei');
+                find = 1;
+            }
+        });
     }
 }
 
