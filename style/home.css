@@ -46,7 +46,7 @@ form button{
 }
 
 .search-div{
-    margin-right: 120px;
+    margin-right: 420px;
     background: white;
     border-radius: 20px;
 }
@@ -143,7 +143,7 @@ nav .menu-items {
     padding-top: 120px;
     box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
     height: 100vh;
-    width: 30%;
+    width: 400px;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
@@ -193,6 +193,7 @@ svg{
 .icon-cart{
     position: relative;
     margin-right: 50px;
+    
 }
 
 .icon-cart span{
@@ -429,6 +430,7 @@ body.showCart .container-products{
     .listProduct{
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 @media(max-width: 1350px)
@@ -468,11 +470,15 @@ body.showCart .container-products{
         margin-left: 50px;
     }
 
+    .search-div{
+        margin-right: 120px;
+    }
+
     nav .menu-items{
         padding-top: 120px;
         box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
         height: 100vh;
-        width: 50%;
+        width: 350px;
         transform: translate(-150%);
         display: flex;
         flex-direction: column;
