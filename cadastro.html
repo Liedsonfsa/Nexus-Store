@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/cadastro.css">
-    <link rel="shortcut icon" href="img/Luxurious__1_-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <link rel="shortcut icon" href="../img/Luxurious__1_-removebg-preview.png" type="image/x-icon">
     <title>Cadastro</title>
 </head>
 <body>
@@ -57,6 +57,7 @@
         
     <script>
         function cadastrar(){
+            
             nome = document.getElementById('nome');
             sobrenome = document.getElementById('sobrenome');
             endereco = document.getElementById('endereço');
@@ -67,9 +68,12 @@
             senha = document.getElementById('senha');
             confirmar_senha = document.getElementById('confirmar-senha');
 
+            const crypto = require('crypto');
+            const hash = crypto.createHash('sha256').update(senha).digest('hex');
+            // console.log(hash);
             if(checkInputs(nome, sobrenome, endereco, telefone, cpf, idade, email, senha, confirmar_senha)){
                 if(passwordValid(senha.value, confirmar_senha.value)){
-                    window.location.href = 'login.html';
+                    window.location.href = 'telas-principais/login.html';
                 } else{
                     alert('Confirme a senha.');
                 }
