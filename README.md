@@ -1,5 +1,5 @@
-# Projeto das Disciplinas de Programação para a  Web I e II.
-O projeto consiste em um site e-commerce.
+# Projeto da Disciplina de Programação para a  Web I.
+O projeto consiste em um site e-commerce com uma proposta de menos poluição visual para o cliente.
 
 # Tecnologias utilizadas
   <div align="center"> 
