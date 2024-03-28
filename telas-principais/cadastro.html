@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <link rel="shortcut icon" href="../img/Luxurious__1_-removebg-preview.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <section class="main">
+        <section class="left">
+            <h1>Insira seus dados...</h1>
+            <div class="formulario">
+                <div class="div">
+                    <form action="#">
+                        <input type="text" placeholder="Nome" id="nome" autocomplete="given-name">
+                        <input type="text" placeholder="Sobrenome" id="sobrenome" autocomplete="additional-name">
+                    </form>
+                </div>
+                <div class="div">
+                    <form action="#">
+                        <input type="text" placeholder="Endereço" id="endereço" autocomplete="street-address">
+                        <input type="text" placeholder="Telefone" id="telefone">
+                    </form>
+                </div>
+                <div class="div">
+                    <form action="get">
+                        <input type="text" placeholder="CPF" id="cpf">
+                        <input type="number" placeholder="Idade" id="idade">
+                    </form>
+                </div>
+                <div class="div4">
+                    <form action="">
+                        <input type="email" placeholder="Email" id="email" autocomplete="email">
+                    </form>
+                </div>
+                <div class="div">
+                    <form action="">
+                        <input type="password" placeholder="Senha" id="senha">
+                        <input type="password" placeholder="Confirmar senha" id="confirmar-senha">
+                    </form>
+                </div>
+            </div>
+            <div class="botao" onclick="cadastrar()">
+                <button>CONFIRMAR</button>
+            </div>
+        </section>
+        <section class="right">
+            <h1>Bem-vindo ao<br>cadastro!</h1>
+
+
+            <p>Com a nossa plataforma você vende mais e nos ajuda a crescer no mercado</p>
+        </section>
+    </section>
+        
+    <script>
+        function cadastrar(){
+            
+            nome = document.getElementById('nome');
+            sobrenome = document.getElementById('sobrenome');
+            endereco = document.getElementById('endereço');
+            telefone = document.getElementById('telefone');
+            cpf = document.getElementById('cpf');
+            idade = document.getElementById('idade');
+            email = document.getElementById('email');
+            senha = document.getElementById('senha');
+            confirmar_senha = document.getElementById('confirmar-senha');
+
+            const crypto = require('crypto');
+            const hash = crypto.createHash('sha256').update(senha).digest('hex');
+            // console.log(hash);
+            if(checkInputs(nome, sobrenome, endereco, telefone, cpf, idade, email, senha, confirmar_senha)){
+                if(passwordValid(senha.value, confirmar_senha.value)){
+                    window.location.href = 'telas-principais/login.html';
+                } else{
+                    alert('Confirme a senha.');
+                }
+            } else{
+                alert('Preencha todos os campos, por favor.');
+            }
+        }
+
+        function passwordValid(senha, confirmar_senha){
+            return senha == confirmar_senha;
+        }
+
+        function checkInputs(nome, sobrenome, endereco, telefone, cpf, idade, email, senha, confirmar_senha){
+            if(nome.value != '' && sobrenome.value != '' && endereco.value != '' && telefone.value != '' && cpf.value != '' && idade.value != '' && email.value != '' && senha.value != '' && confirmar_senha.value != ''){
+                return true;
+            }
+
+            return false;
+        }
+
+        
+    </script>
+    
+</body>
+</html>
