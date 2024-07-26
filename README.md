@@ -1,6 +1,15 @@
 # Projeto da Disciplina de Programação para a  Web I.
 O projeto consiste em um site e-commerce com uma proposta de menos poluição visual para o cliente.
 
+## Home
+<img src="nexus-store-home.png">
+
+## Tela de produto
+<img src="teclado.png">
+
+## Tela de pagamento
+<img src="payment.png">
+
 # Tecnologias utilizadas
   <div align="center"> 
   <br>
